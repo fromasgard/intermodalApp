@@ -1,9 +1,9 @@
 
 
  firebase.initializeApp({
-    apiKey: "AIzaSyDVUAOuHCGwSFGHrHPoPlhmEb7RpyoRnN4",
-    authDomain: "intermodal2-78676.firebaseapp.com",
-    projectId: "intermodal2-78676"
+    apiKey: "aquituApikey",
+    authDomain: "xxxxxx",
+    projectId: "xxxxxxx"
   });
   var db = firebase.firestore();
   
@@ -65,7 +65,6 @@ function agregarServicio(){
         "newestOnTop": false,
         "progressBar": true,
         "positionClass": "toast-bottom-right",
-        "preventDuplicates": true,
         "onclick": null,
         "showDuration": "300",
         "hideDuration": "1000",

@@ -20,7 +20,7 @@
     <!-- Comiendo del nav -->  
     <nav  id="menu" class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
       <div class="container">
-       <a class="navbar-brand" href="login.html">
+       <a class="navbar-brand" href="index.html">
          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Santiago_Metro_logo.svg/1229px-Santiago_Metro_logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="">
          <strong>Metro</strong> 
        </a>
@@ -48,13 +48,9 @@
   <div class="container">
     <h1 class="display-4">Aplicacion Intermodal</h1>
     <h1 class="display-4 lead">Hola! aqui es donde puedes ingresar servicios.</h1>
-  
-    <div class="col">
-      <input type="text" class="rounded" id="Servicio"  placeholder="Ingrese Servicio">
-    </div>
 
   <div class="mt-3">
-    <input class="ml-2 btn btn-warning" type="button" value="Modificar" id="BtnModificar" onclick="modificar(recuperarValor())">
+ 
   </div>
   </div>
 </div>
@@ -64,30 +60,36 @@
 <div class="container" >
   <div class="row d-flex">
   <div class="card text-white bg-danger ml-2 mb-3" style="max-width: 10rem;"  >
-    <div class="card-header">Anden 1</div>
+    <div class="card-header text-center">Anden 1</div>
     <div class="card-body" >
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
       <div class="d-flex">
-        <button type="button" class="btn btn-success Serv" id="S1" onclick="agregarServiciobtn(`${servicio1}`,'1')">Descarga</button>
-      <button class="fas fa-edit btn btn-success" onclick="recuperarValor(`${servicio1}`)"></button>
+        <button type="button" class="ml-3 mt-1 btn btn-success Serv" id="S1" onclick="agregarServiciobtn(`${servicio1}`,'1')">Descarga</button>
+      
       </div>
     </div>
   </div>
   <div class="card text-white bg-danger ml-2 mb-3" style="max-width: 10rem;">
-    <div class="card-header">Anden 2</div>
+    <div class="card-header text-center">Anden 2</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-info Serv" id="S2" onclick="agregarServiciobtn(`${servicio2}`,'2')">Descarga</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <button type="button" class=" ml-3 mt-1 btn btn-info Serv" id="S2" onclick="agregarServiciobtn(`${servicio2}`,'2')">Descarga</button>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 3</div>
+    <div class="card-header text-center">Anden 3</div>
     <div class="card-body" >
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <div class="d-flex">
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="d-flex mt-1">
         <button type="button" class="btn btn-warning Serv" id="S3" onclick="agregarServiciobtn(`${servicio3}`,'3')">314C</button>
       <button type="button" class="ml-1 btn btn-warning Serv" id="S4" onclick="agregarServiciobtn(`${servicio4}`,'3')">B08</button>
 
@@ -95,86 +97,111 @@
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 4</div>
+    <div class="card-header text-center">Anden 4</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <div class="d-flex">
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="d-flex mt-1">
         <button type="button" class="btn btn-warning Serv"id="S5" onclick="agregarServiciobtn(`${servicio5}`,'4')">B18</button>
       <button type="button" class="ml-1 btn btn-warning Serv" id="S6" onclick="agregarServiciobtn(`${servicio6}`,'4')">B18e</button>
       </div>
     </div>
   </div> 
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 5</div>
+    <div class="card-header text-center">Anden 5</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S7" onclick="agregarServiciobtn(`${servicio7}`,'5')">B11</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1">
+        <button type="button" class="btn btn-warning Serv" id="S7" onclick="agregarServiciobtn(`${servicio7}`,'5')">B11</button>
+      </div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 6</div>
+    <div class="card-header text-center">Anden 6</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S8" onclick="agregarServiciobtn(`${servicio8}`,'6')">308C</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1">
+        <button type="button" class="btn btn-warning Serv" id="S8" onclick="agregarServiciobtn(`${servicio8}`,'6')">308C</button>
+      </div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 7</div>
+    <div class="card-header text-center">Anden 7</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-success Serv" id="S9" onclick="agregarServiciobtn(`${servicio9}`,'7')">Descarga</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <button type="button" class=" mt-1 ml-3 btn btn-success Serv" id="S9" onclick="agregarServiciobtn(`${servicio9}`,'7')">Descarga</button>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2 " style="max-width: 10rem;">
-    <div class="card-header">Anden 8</div>
+    <div class="card-header text-center">Anden 8</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S10" onclick="agregarServiciobtn(`${servicio10}`,'8')">B13</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1"><button type="button" class="btn btn-warning Serv" id="S10" onclick="agregarServiciobtn(`${servicio10}`,'8')">B13</button></div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 9</div>
+    <div class="card-header text-center">Anden 9</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S11" onclick="agregarServiciobtn(`${servicio11}`,'9')">307</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+    <div class="text-center mt-1">  <button type="button" class="btn btn-warning Serv" id="S11" onclick="agregarServiciobtn(`${servicio11}`,'9')">307</button></div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 10</div>
+    <div class="card-header text-center">Anden 10</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S12" onclick="agregarServiciobtn(`${servicio12}`,'10')">315C</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1"><button type="button" class="btn btn-warning Serv" id="S12" onclick="agregarServiciobtn(`${servicio12}`,'10')">315C</button></div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 11</div>
+    <div class="card-header text-center">Anden 11</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S13" onclick="agregarServiciobtn(`${servicio13}`,'11')">B12</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1"><button type="button" class="btn btn-warning Serv" id="S13" onclick="agregarServiciobtn(`${servicio13}`,'11')">B12</button></div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 12</div>
+    <div class="card-header text-center">Anden 12</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S14" onclick="agregarServiciobtn(`${servicio14}`,'12')">B12C</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1"><button type="button" class=" btn btn-warning Serv" id="S14" onclick="agregarServiciobtn(`${servicio14}`,'12')">B12C</button></div>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3 ml-2" style="max-width: 10rem;">
-    <div class="card-header">Anden 13</div>
+    <div class="card-header text-center">Anden 13</div>
     <div class="card-body">
-      <h5 class="card-title">Llegada servicios</h5>
-      <p class="card-text">Presiona sobre el servicio para agregarlo a la tabla.</p>
-      <button type="button" class="btn btn-warning Serv" id="S15" onclick="agregarServiciobtn(`${servicio15}`,'13')"> B07</button>
+      <div class="text-center">
+        <h5 class="card-title">Llegada servicios</h5>
+      <h1 class="fas fa-bus"></h1>
+      </div>
+      <div class="text-center mt-1">
+        <button type="button" class="btn btn-warning Serv" id="S15" onclick="agregarServiciobtn(`${servicio15}`,'13')"> B07</button></div>
     </div>
   </div>
   </div>
@@ -213,7 +240,7 @@
   <table class="table table-bordered table-striped mb-0" id="tablita">
     <thead>
       <tr>
-        <th scope="col">Servicio <h2 class="fas fa-sort-alpha-up"onclick="sortTable(0, 'str')"></h2></th>
+        <th scope="col">Servicio <h2 class="fas fa-sort-alpha-up"onclick="sortTable(1, 'str')"></h2></th>
         <th scope="col">Hora</th>
         <th scope="col">Fecha</th>
         <th scope="col">Anden</th>
